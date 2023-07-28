@@ -35,4 +35,11 @@ HW/TIL in Expert Solidity Bootcamp of Encode Club
 }
 ``` 
 
+3. [Store.sol](./Week1/Store.sol)
+
+- Using [sol2uml](https://github.com/naddison36/sol2uml), we can visualize the storage of a contract. 
+- [Store_previous.svg](./Week1/Store_previous.svg) describes the storage slot of previous Store.sol, which is commented out in the contract.
+- [Store_now.svg](./Week1/Store_now.svg) describes the storage slot of current Store.sol, which saves 17 slots compared to the previous one.
+- The order of state variabes are one of the important parts in gas optimization.
+- You can test your own ordering of variables, by `sol2uml storage contracts/Week1/ -c Store`.
 

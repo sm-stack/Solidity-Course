@@ -43,3 +43,8 @@ HW/TIL in Expert Solidity Bootcamp of Encode Club
 - The order of state variabes are one of the important parts in gas optimization.
 - You can test your own ordering of variables, by `sol2uml storage contracts/Week1/ -c Store`.
 
+4. [Pond0x](./Week1/Pond0x.sol)
+
+- Rug pull analysis on Pond0x / $PNDX
+- Test codes in foundry is [here](../test/foundry-test/Pond0x.t.sol).
+- Further info is on my [tweet](https://twitter.com/StackDigest/status/1685264826766131202?s=20).

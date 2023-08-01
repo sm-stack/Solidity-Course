@@ -48,3 +48,7 @@ HW/TIL in Expert Solidity Bootcamp of Encode Club
 - Rug pull analysis on Pond0x / $PNDX
 - Test codes in foundry is [here](../test/foundry-test/Pond0x.t.sol).
 - Further info is on my [tweet](https://twitter.com/StackDigest/status/1685264826766131202?s=20).
+
+
+## Week 2
+1. 

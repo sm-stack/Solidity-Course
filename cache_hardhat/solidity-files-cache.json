@@ -1,0 +1,393 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week1/ArrayDelete.sol": {
+      "lastModificationDate": 1690431866386,
+      "contentHash": "3c41d8a9ff89d055387ff1fa46751af7",
+      "sourceName": "contracts/Week1/ArrayDelete.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "ArrayDelete"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week1/CompareString.sol": {
+      "lastModificationDate": 1690437020005,
+      "contentHash": "9c1889793109e65467e1e731922dd85f",
+      "sourceName": "contracts/Week1/CompareString.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Test"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week1/MockPerson.sol": {
+      "lastModificationDate": 1690868879732,
+      "contentHash": "324ebd4485361b9e9f195b4c81474b98",
+      "sourceName": "contracts/Week1/MockPerson.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "MockPerson"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week1/ModifiedPond0x.sol": {
+      "lastModificationDate": 1690868889992,
+      "contentHash": "be7c21fc4ef87c3f82bde916634ae34c",
+      "sourceName": "contracts/Week1/ModifiedPond0x.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [
+        "solady/src/auth/Ownable.sol",
+        "solady/src/tokens/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "ModifiedPond0x"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/lib/solady/src/auth/Ownable.sol": {
+      "lastModificationDate": 1690872485488,
+      "contentHash": "3d54428bac6018778c311266c731869d",
+      "sourceName": "lib/solady/src/auth/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/lib/solady/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1690872485498,
+      "contentHash": "134b5fcef47789eb8d4e74e22d760dbd",
+      "sourceName": "lib/solady/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week1/Pond0x.sol": {
+      "lastModificationDate": 1690868897607,
+      "contentHash": "0a010d3620ee3897f5939e725251e52c",
+      "sourceName": "contracts/Week1/Pond0x.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [
+        "solady/src/auth/Ownable.sol",
+        "solady/src/tokens/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Pond0x"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week1/Store.sol": {
+      "lastModificationDate": 1690527618575,
+      "contentHash": "9be99ee5bc21a6f87217482f098ec07b",
+      "sourceName": "contracts/Week1/Store.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "Store"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week2/TestYul.sol": {
+      "lastModificationDate": 1690884943374,
+      "contentHash": "65122b08f14dd23dd1b022b158880dd9",
+      "sourceName": "contracts/Week2/TestYul.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "Add",
+        "Deploy1",
+        "Intro",
+        "Scope",
+        "SubOverflow"
+      ]
+    }
+  }
+}

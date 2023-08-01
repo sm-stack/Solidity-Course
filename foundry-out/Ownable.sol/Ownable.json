@@ -1,0 +1,3622 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NewOwnerIsZeroAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoHandoverRequest",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Unauthorized",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "pendingOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipHandoverCanceled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "pendingOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipHandoverRequested",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "oldOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "cancelOwnershipHandover",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pendingOwner",
+          "type": "address"
+        }
+      ],
+      "name": "completeOwnershipHandover",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "result",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pendingOwner",
+          "type": "address"
+        }
+      ],
+      "name": "ownershipHandoverExpiresAt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "requestOwnershipHandover",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "cancelOwnershipHandover()": "54d1f13d",
+    "completeOwnershipHandover(address)": "f04e283e",
+    "owner()": "8da5cb5b",
+    "ownershipHandoverExpiresAt(address)": "fee81cf4",
+    "renounceOwnership()": "715018a6",
+    "requestOwnershipHandover()": "25692962",
+    "transferOwnership(address)": "f2fde38b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NewOwnerIsZeroAddress\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NoHandoverRequest\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Unauthorized\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"pendingOwner\",\"type\":\"address\"}],\"name\":\"OwnershipHandoverCanceled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"pendingOwner\",\"type\":\"address\"}],\"name\":\"OwnershipHandoverRequested\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"oldOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"cancelOwnershipHandover\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pendingOwner\",\"type\":\"address\"}],\"name\":\"completeOwnershipHandover\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"result\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pendingOwner\",\"type\":\"address\"}],\"name\":\"ownershipHandoverExpiresAt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"result\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"requestOwnershipHandover\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Solady (https://github.com/vectorized/solady/blob/main/src/auth/Ownable.sol)\",\"details\":\"While the ownable portion follows [EIP-173](https://eips.ethereum.org/EIPS/eip-173) for compatibility, the nomenclature for the 2-step ownership handover may be unique to this codebase.\",\"errors\":{\"NewOwnerIsZeroAddress()\":[{\"details\":\"The `newOwner` cannot be the zero address.\"}],\"NoHandoverRequest()\":[{\"details\":\"The `pendingOwner` does not have a valid handover request.\"}],\"Unauthorized()\":[{\"details\":\"The caller is not authorized to call the function.\"}]},\"events\":{\"OwnershipHandoverCanceled(address)\":{\"details\":\"The ownership handover to `pendingOwner` has been canceled.\"},\"OwnershipHandoverRequested(address)\":{\"details\":\"An ownership handover to `pendingOwner` has been requested.\"},\"OwnershipTransferred(address,address)\":{\"details\":\"The ownership is transferred from `oldOwner` to `newOwner`. This event is intentionally kept the same as OpenZeppelin's Ownable to be compatible with indexers and [EIP-173](https://eips.ethereum.org/EIPS/eip-173), despite it not being as lightweight as a single argument event.\"}},\"kind\":\"dev\",\"methods\":{\"cancelOwnershipHandover()\":{\"details\":\"Cancels the two-step ownership handover to the caller, if any.\"},\"completeOwnershipHandover(address)\":{\"details\":\"Allows the owner to complete the two-step ownership handover to `pendingOwner`. Reverts if there is no existing ownership handover requested by `pendingOwner`.\"},\"owner()\":{\"details\":\"Returns the owner of the contract.\"},\"ownershipHandoverExpiresAt(address)\":{\"details\":\"Returns the expiry timestamp for the two-step ownership handover to `pendingOwner`.\"},\"renounceOwnership()\":{\"details\":\"Allows the owner to renounce their ownership.\"},\"requestOwnershipHandover()\":{\"details\":\"Request a two-step ownership handover to the caller. The request will automatically expire in 48 hours (172800 seconds) by default.\"},\"transferOwnership(address)\":{\"details\":\"Allows the owner to transfer the ownership to `newOwner`.\"}},\"stateVariables\":{\"_OWNERSHIP_HANDOVER_CANCELED_EVENT_SIGNATURE\":{\"details\":\"`keccak256(bytes(\\\"OwnershipHandoverCanceled(address)\\\"))`.\"},\"_OWNERSHIP_HANDOVER_REQUESTED_EVENT_SIGNATURE\":{\"details\":\"`keccak256(bytes(\\\"OwnershipHandoverRequested(address)\\\"))`.\"},\"_OWNERSHIP_TRANSFERRED_EVENT_SIGNATURE\":{\"details\":\"`keccak256(bytes(\\\"OwnershipTransferred(address,address)\\\"))`.\"},\"_OWNER_SLOT_NOT\":{\"details\":\"The owner slot is given by: `not(_OWNER_SLOT_NOT)`. It is intentionally chosen to be a high value to avoid collision with lower slots. The choice of manual storage layout is to enable compatibility with both regular and upgradeable contracts.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Simple single owner authorization mixin.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/solady/src/auth/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":800},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=node_modules/forge-std/\",\":hardhat/=node_modules/hardhat/\",\":solady/=lib/solady/\"]},\"sources\":{\"lib/solady/src/auth/Ownable.sol\":{\"keccak256\":\"0xa0d943b6588c18b375535353b0b93310346a22997f91f9057348d6cdb33d9359\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d76543c2e852af68f272a7be8966ecec47f552c0f75b21b79a5f7a60c078a2ab\",\"dweb:/ipfs/Qmdz2U2gUedvWkBKeEfuccw4RkMBZ1D64CbqFi8rDNsL5M\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NewOwnerIsZeroAddress"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NoHandoverRequest"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Unauthorized"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "pendingOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipHandoverCanceled",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "pendingOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipHandoverRequested",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "oldOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "cancelOwnershipHandover"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "pendingOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "completeOwnershipHandover"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "result",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "pendingOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "ownershipHandoverExpiresAt",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "result",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "renounceOwnership"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "requestOwnershipHandover"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "transferOwnership"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "cancelOwnershipHandover()": {
+            "details": "Cancels the two-step ownership handover to the caller, if any."
+          },
+          "completeOwnershipHandover(address)": {
+            "details": "Allows the owner to complete the two-step ownership handover to `pendingOwner`. Reverts if there is no existing ownership handover requested by `pendingOwner`."
+          },
+          "owner()": {
+            "details": "Returns the owner of the contract."
+          },
+          "ownershipHandoverExpiresAt(address)": {
+            "details": "Returns the expiry timestamp for the two-step ownership handover to `pendingOwner`."
+          },
+          "renounceOwnership()": {
+            "details": "Allows the owner to renounce their ownership."
+          },
+          "requestOwnershipHandover()": {
+            "details": "Request a two-step ownership handover to the caller. The request will automatically expire in 48 hours (172800 seconds) by default."
+          },
+          "transferOwnership(address)": {
+            "details": "Allows the owner to transfer the ownership to `newOwner`."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=node_modules/forge-std/",
+        "hardhat/=node_modules/hardhat/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 800
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/solady/src/auth/Ownable.sol": "Ownable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/solady/src/auth/Ownable.sol": {
+        "keccak256": "0xa0d943b6588c18b375535353b0b93310346a22997f91f9057348d6cdb33d9359",
+        "urls": [
+          "bzz-raw://d76543c2e852af68f272a7be8966ecec47f552c0f75b21b79a5f7a60c078a2ab",
+          "dweb:/ipfs/Qmdz2U2gUedvWkBKeEfuccw4RkMBZ1D64CbqFi8rDNsL5M"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/solady/src/auth/Ownable.sol",
+    "id": 3243,
+    "exportedSymbols": {
+      "Ownable": [
+        3242
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:10669:7",
+    "nodes": [
+      {
+        "id": 3072,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:7",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 3242,
+        "nodeType": "ContractDefinition",
+        "src": "402:10298:7",
+        "nodes": [
+          {
+            "id": 3076,
+            "nodeType": "ErrorDefinition",
+            "src": "781:21:7",
+            "nodes": [],
+            "documentation": {
+              "id": 3074,
+              "nodeType": "StructuredDocumentation",
+              "src": "717:59:7",
+              "text": "@dev The caller is not authorized to call the function."
+            },
+            "errorSelector": "82b42900",
+            "name": "Unauthorized",
+            "nameLocation": "787:12:7",
+            "parameters": {
+              "id": 3075,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "799:2:7"
+            }
+          },
+          {
+            "id": 3079,
+            "nodeType": "ErrorDefinition",
+            "src": "864:30:7",
+            "nodes": [],
+            "documentation": {
+              "id": 3077,
+              "nodeType": "StructuredDocumentation",
+              "src": "808:51:7",
+              "text": "@dev The `newOwner` cannot be the zero address."
+            },
+            "errorSelector": "7448fbae",
+            "name": "NewOwnerIsZeroAddress",
+            "nameLocation": "870:21:7",
+            "parameters": {
+              "id": 3078,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "891:2:7"
+            }
+          },
+          {
+            "id": 3082,
+            "nodeType": "ErrorDefinition",
+            "src": "972:26:7",
+            "nodes": [],
+            "documentation": {
+              "id": 3080,
+              "nodeType": "StructuredDocumentation",
+              "src": "900:67:7",
+              "text": "@dev The `pendingOwner` does not have a valid handover request."
+            },
+            "errorSelector": "6f5e8818",
+            "name": "NoHandoverRequest",
+            "nameLocation": "978:17:7",
+            "parameters": {
+              "id": 3081,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "995:2:7"
+            }
+          },
+          {
+            "id": 3089,
+            "nodeType": "EventDefinition",
+            "src": "1602:79:7",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 3083,
+              "nodeType": "StructuredDocumentation",
+              "src": "1287:310:7",
+              "text": "@dev The ownership is transferred from `oldOwner` to `newOwner`.\n This event is intentionally kept the same as OpenZeppelin's Ownable to be\n compatible with indexers and [EIP-173](https://eips.ethereum.org/EIPS/eip-173),\n despite it not being as lightweight as a single argument event."
+            },
+            "eventSelector": "8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "name": "OwnershipTransferred",
+            "nameLocation": "1608:20:7",
+            "parameters": {
+              "id": 3088,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3085,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "oldOwner",
+                  "nameLocation": "1645:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3089,
+                  "src": "1629:24:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1629:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3087,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "1671:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3089,
+                  "src": "1655:24:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3086,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1655:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1628:52:7"
+            }
+          },
+          {
+            "id": 3094,
+            "nodeType": "EventDefinition",
+            "src": "1760:63:7",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 3090,
+              "nodeType": "StructuredDocumentation",
+              "src": "1687:68:7",
+              "text": "@dev An ownership handover to `pendingOwner` has been requested."
+            },
+            "eventSelector": "dbf36a107da19e49527a7176a1babf963b4b0ff8cde35ee35d6cd8f1f9ac7e1d",
+            "name": "OwnershipHandoverRequested",
+            "nameLocation": "1766:26:7",
+            "parameters": {
+              "id": 3093,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3092,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "pendingOwner",
+                  "nameLocation": "1809:12:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3094,
+                  "src": "1793:28:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3091,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1793:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1792:30:7"
+            }
+          },
+          {
+            "id": 3099,
+            "nodeType": "EventDefinition",
+            "src": "1902:62:7",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 3095,
+              "nodeType": "StructuredDocumentation",
+              "src": "1829:68:7",
+              "text": "@dev The ownership handover to `pendingOwner` has been canceled."
+            },
+            "eventSelector": "fa7b8eab7da67f412cc9575ed43464468f9bfbae89d1675917346ca6d8fe3c92",
+            "name": "OwnershipHandoverCanceled",
+            "nameLocation": "1908:25:7",
+            "parameters": {
+              "id": 3098,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3097,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "pendingOwner",
+                  "nameLocation": "1950:12:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3099,
+                  "src": "1934:28:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3096,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1934:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1933:30:7"
+            }
+          },
+          {
+            "id": 3103,
+            "nodeType": "VariableDeclaration",
+            "src": "2044:140:7",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 3100,
+              "nodeType": "StructuredDocumentation",
+              "src": "1970:69:7",
+              "text": "@dev `keccak256(bytes(\"OwnershipTransferred(address,address)\"))`."
+            },
+            "mutability": "constant",
+            "name": "_OWNERSHIP_TRANSFERRED_EVENT_SIGNATURE",
+            "nameLocation": "2069:38:7",
+            "scope": 3242,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3101,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2044:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "307838626530303739633533313635393134313334346364316664306134663238343139343937663937323261336461616665336234313836663662363435376530",
+              "id": 3102,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "2118:66:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_63267312222310607310220992301550539520881909915348243260808268974908359596000_by_1",
+                "typeString": "int_const 6326...(69 digits omitted)...6000"
+              },
+              "value": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 3107,
+            "nodeType": "VariableDeclaration",
+            "src": "2263:147:7",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 3104,
+              "nodeType": "StructuredDocumentation",
+              "src": "2191:67:7",
+              "text": "@dev `keccak256(bytes(\"OwnershipHandoverRequested(address)\"))`."
+            },
+            "mutability": "constant",
+            "name": "_OWNERSHIP_HANDOVER_REQUESTED_EVENT_SIGNATURE",
+            "nameLocation": "2288:45:7",
+            "scope": 3242,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3105,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2263:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "307864626633366131303764613139653439353237613731373661316261626639363362346230666638636465333565653335643663643866316639616337653164",
+              "id": 3106,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "2344:66:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_99486589706178915293482045537067896628184784474209892898124391061398315892253_by_1",
+                "typeString": "int_const 9948...(69 digits omitted)...2253"
+              },
+              "value": "0xdbf36a107da19e49527a7176a1babf963b4b0ff8cde35ee35d6cd8f1f9ac7e1d"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 3111,
+            "nodeType": "VariableDeclaration",
+            "src": "2488:146:7",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 3108,
+              "nodeType": "StructuredDocumentation",
+              "src": "2417:66:7",
+              "text": "@dev `keccak256(bytes(\"OwnershipHandoverCanceled(address)\"))`."
+            },
+            "mutability": "constant",
+            "name": "_OWNERSHIP_HANDOVER_CANCELED_EVENT_SIGNATURE",
+            "nameLocation": "2513:44:7",
+            "scope": 3242,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3109,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "2488:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "307866613762386561623764613637663431326363393537356564343334363434363866396266626165383964313637353931373334366361366438666533633932",
+              "id": 3110,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "2568:66:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_113296519006148992096626879868577423813870114622160551413976512868841544367250_by_1",
+                "typeString": "int_const 1132...(70 digits omitted)...7250"
+              },
+              "value": "0xfa7b8eab7da67f412cc9575ed43464468f9bfbae89d1675917346ca6d8fe3c92"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 3115,
+            "nodeType": "VariableDeclaration",
+            "src": "3212:53:7",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 3112,
+              "nodeType": "StructuredDocumentation",
+              "src": "2924:283:7",
+              "text": "@dev The owner slot is given by: `not(_OWNER_SLOT_NOT)`.\n It is intentionally chosen to be a high value\n to avoid collision with lower slots.\n The choice of manual storage layout is to enable compatibility\n with both regular and upgradeable contracts."
+            },
+            "mutability": "constant",
+            "name": "_OWNER_SLOT_NOT",
+            "nameLocation": "3237:15:7",
+            "scope": 3242,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3113,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "3212:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "30783862373863366438",
+              "id": 3114,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "3255:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2339948248_by_1",
+                "typeString": "int_const 2339948248"
+              },
+              "value": "0x8b78c6d8"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 3119,
+            "nodeType": "VariableDeclaration",
+            "src": "3553:57:7",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 3116,
+              "nodeType": "StructuredDocumentation",
+              "src": "3272:276:7",
+              "text": "The ownership handover slot of `newOwner` is given by:\n ```\n     mstore(0x00, or(shl(96, user), _HANDOVER_SLOT_SEED))\n     let handoverSlot := keccak256(0x00, 0x20)\n ```\n It stores the expiry timestamp of the two-step ownership handover."
+            },
+            "mutability": "constant",
+            "name": "_HANDOVER_SLOT_SEED",
+            "nameLocation": "3578:19:7",
+            "scope": 3242,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3117,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "3553:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "30783338396137356531",
+              "id": 3118,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "3600:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_949646817_by_1",
+                "typeString": "int_const 949646817"
+              },
+              "value": "0x389a75e1"
+            },
+            "visibility": "private"
+          },
+          {
+            "id": 3127,
+            "nodeType": "FunctionDefinition",
+            "src": "4351:448:7",
+            "nodes": [],
+            "body": {
+              "id": 3126,
+              "nodeType": "Block",
+              "src": "4412:387:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "4474:319:7",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "4528:38:7",
+                        "value": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "4544:2:7",
+                              "type": "",
+                              "value": "96"
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "4552:2:7",
+                                  "type": "",
+                                  "value": "96"
+                                },
+                                {
+                                  "name": "newOwner",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "4556:8:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "shl",
+                                "nodeType": "YulIdentifier",
+                                "src": "4548:3:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "4548:17:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "shr",
+                            "nodeType": "YulIdentifier",
+                            "src": "4540:3:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "4540:26:7"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "newOwner",
+                            "nodeType": "YulIdentifier",
+                            "src": "4528:8:7"
+                          }
+                        ]
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "name": "_OWNER_SLOT_NOT",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "4626:15:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "not",
+                                "nodeType": "YulIdentifier",
+                                "src": "4622:3:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "4622:20:7"
+                            },
+                            {
+                              "name": "newOwner",
+                              "nodeType": "YulIdentifier",
+                              "src": "4644:8:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "sstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "4615:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "4615:38:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "4615:38:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "4725:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "4728:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "name": "_OWNERSHIP_TRANSFERRED_EVENT_SIGNATURE",
+                              "nodeType": "YulIdentifier",
+                              "src": "4731:38:7"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "4771:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "name": "newOwner",
+                              "nodeType": "YulIdentifier",
+                              "src": "4774:8:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "log3",
+                            "nodeType": "YulIdentifier",
+                            "src": "4720:4:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "4720:63:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "4720:63:7"
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3103,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "4731:38:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3115,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "4626:15:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3122,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "4528:8:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3122,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "4556:8:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3122,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "4644:8:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3122,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "4774:8:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3125,
+                  "nodeType": "InlineAssembly",
+                  "src": "4465:328:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3120,
+              "nodeType": "StructuredDocumentation",
+              "src": "3900:446:7",
+              "text": "@dev Initializes the owner directly without authorization guard.\n This function must be called upon initialization,\n regardless of whether the contract is upgradeable or not.\n This is to enable generalization to both regular and upgradeable contracts,\n and to save gas in case the initial owner is not the caller.\n For performance reasons, this function will not check if there\n is an existing owner."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_initializeOwner",
+            "nameLocation": "4360:16:7",
+            "parameters": {
+              "id": 3123,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3122,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "4385:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3127,
+                  "src": "4377:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3121,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4377:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4376:18:7"
+            },
+            "returnParameters": {
+              "id": 3124,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4412:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3135,
+            "nodeType": "FunctionDefinition",
+            "src": "4871:495:7",
+            "nodes": [],
+            "body": {
+              "id": 3134,
+              "nodeType": "Block",
+              "src": "4925:441:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "4987:373:7",
+                    "statements": [
+                      {
+                        "nodeType": "YulVariableDeclaration",
+                        "src": "5001:37:7",
+                        "value": {
+                          "arguments": [
+                            {
+                              "name": "_OWNER_SLOT_NOT",
+                              "nodeType": "YulIdentifier",
+                              "src": "5022:15:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "not",
+                            "nodeType": "YulIdentifier",
+                            "src": "5018:3:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "5018:20:7"
+                        },
+                        "variables": [
+                          {
+                            "name": "ownerSlot",
+                            "nodeType": "YulTypedName",
+                            "src": "5005:9:7",
+                            "type": ""
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "5091:38:7",
+                        "value": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "5107:2:7",
+                              "type": "",
+                              "value": "96"
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "5115:2:7",
+                                  "type": "",
+                                  "value": "96"
+                                },
+                                {
+                                  "name": "newOwner",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "5119:8:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "shl",
+                                "nodeType": "YulIdentifier",
+                                "src": "5111:3:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "5111:17:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "shr",
+                            "nodeType": "YulIdentifier",
+                            "src": "5103:3:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "5103:26:7"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "newOwner",
+                            "nodeType": "YulIdentifier",
+                            "src": "5091:8:7"
+                          }
+                        ]
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "5201:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "5204:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "name": "_OWNERSHIP_TRANSFERRED_EVENT_SIGNATURE",
+                              "nodeType": "YulIdentifier",
+                              "src": "5207:38:7"
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "name": "ownerSlot",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "5253:9:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "sload",
+                                "nodeType": "YulIdentifier",
+                                "src": "5247:5:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "5247:16:7"
+                            },
+                            {
+                              "name": "newOwner",
+                              "nodeType": "YulIdentifier",
+                              "src": "5265:8:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "log3",
+                            "nodeType": "YulIdentifier",
+                            "src": "5196:4:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "5196:78:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "5196:78:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "name": "ownerSlot",
+                              "nodeType": "YulIdentifier",
+                              "src": "5330:9:7"
+                            },
+                            {
+                              "name": "newOwner",
+                              "nodeType": "YulIdentifier",
+                              "src": "5341:8:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "sstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "5323:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "5323:27:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "5323:27:7"
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3103,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5207:38:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3115,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5022:15:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3130,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5091:8:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3130,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5119:8:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3130,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5265:8:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3130,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5341:8:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3133,
+                  "nodeType": "InlineAssembly",
+                  "src": "4978:382:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3128,
+              "nodeType": "StructuredDocumentation",
+              "src": "4805:61:7",
+              "text": "@dev Sets the owner directly without authorization guard."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_setOwner",
+            "nameLocation": "4880:9:7",
+            "parameters": {
+              "id": 3131,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3130,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "4898:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3135,
+                  "src": "4890:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3129,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4890:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4889:18:7"
+            },
+            "returnParameters": {
+              "id": 3132,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4925:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3141,
+            "nodeType": "FunctionDefinition",
+            "src": "5424:364:7",
+            "nodes": [],
+            "body": {
+              "id": 3140,
+              "nodeType": "Block",
+              "src": "5469:319:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "5531:251:7",
+                    "statements": [
+                      {
+                        "body": {
+                          "nodeType": "YulBlock",
+                          "src": "5660:112:7",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "5685:4:7",
+                                    "type": "",
+                                    "value": "0x00"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "5691:10:7",
+                                    "type": "",
+                                    "value": "0x82b42900"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "5678:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "5678:24:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "5678:24:7"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "5747:4:7",
+                                    "type": "",
+                                    "value": "0x1c"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "5753:4:7",
+                                    "type": "",
+                                    "value": "0x04"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "revert",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "5740:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "5740:18:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "5740:18:7"
+                            }
+                          ]
+                        },
+                        "condition": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "arguments": [],
+                                  "functionName": {
+                                    "name": "caller",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "5620:6:7"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "5620:8:7"
+                                },
+                                {
+                                  "arguments": [
+                                    {
+                                      "arguments": [
+                                        {
+                                          "name": "_OWNER_SLOT_NOT",
+                                          "nodeType": "YulIdentifier",
+                                          "src": "5640:15:7"
+                                        }
+                                      ],
+                                      "functionName": {
+                                        "name": "not",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "5636:3:7"
+                                      },
+                                      "nodeType": "YulFunctionCall",
+                                      "src": "5636:20:7"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "sload",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "5630:5:7"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "5630:27:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "eq",
+                                "nodeType": "YulIdentifier",
+                                "src": "5617:2:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "5617:41:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "iszero",
+                            "nodeType": "YulIdentifier",
+                            "src": "5610:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "5610:49:7"
+                        },
+                        "nodeType": "YulIf",
+                        "src": "5607:165:7"
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3115,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "5640:15:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3139,
+                  "nodeType": "InlineAssembly",
+                  "src": "5522:260:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3136,
+              "nodeType": "StructuredDocumentation",
+              "src": "5372:47:7",
+              "text": "@dev Throws if the sender is not the owner."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_checkOwner",
+            "nameLocation": "5433:11:7",
+            "parameters": {
+              "id": 3137,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5444:2:7"
+            },
+            "returnParameters": {
+              "id": 3138,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5469:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3152,
+            "nodeType": "FunctionDefinition",
+            "src": "6019:110:7",
+            "nodes": [],
+            "body": {
+              "id": 3151,
+              "nodeType": "Block",
+              "src": "6096:33:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_rational_172800_by_1",
+                      "typeString": "int_const 172800"
+                    },
+                    "id": 3149,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "hexValue": "3438",
+                      "id": 3147,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "6113:2:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_48_by_1",
+                        "typeString": "int_const 48"
+                      },
+                      "value": "48"
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "*",
+                    "rightExpression": {
+                      "hexValue": "33363030",
+                      "id": 3148,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "6118:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_3600_by_1",
+                        "typeString": "int_const 3600"
+                      },
+                      "value": "3600"
+                    },
+                    "src": "6113:9:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_172800_by_1",
+                      "typeString": "int_const 172800"
+                    }
+                  },
+                  "functionReturnParameters": 3146,
+                  "id": 3150,
+                  "nodeType": "Return",
+                  "src": "6106:16:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3142,
+              "nodeType": "StructuredDocumentation",
+              "src": "5794:220:7",
+              "text": "@dev Returns how long a two-step ownership handover is valid for in seconds.\n Override to return a different value if needed.\n Made internal to conserve bytecode. Wrap it in a public function if needed."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_ownershipHandoverValidFor",
+            "nameLocation": "6028:26:7",
+            "parameters": {
+              "id": 3143,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "6054:2:7"
+            },
+            "returnParameters": {
+              "id": 3146,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3145,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3152,
+                  "src": "6088:6:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 3144,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6088:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6087:8:7"
+            },
+            "scope": 3242,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 3166,
+            "nodeType": "FunctionDefinition",
+            "src": "6489:349:7",
+            "nodes": [],
+            "body": {
+              "id": 3165,
+              "nodeType": "Block",
+              "src": "6567:271:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "6629:174:7",
+                    "statements": [
+                      {
+                        "body": {
+                          "nodeType": "YulBlock",
+                          "src": "6672:121:7",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "6697:4:7",
+                                    "type": "",
+                                    "value": "0x00"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "6703:10:7",
+                                    "type": "",
+                                    "value": "0x7448fbae"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "6690:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "6690:24:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "6690:24:7"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "6768:4:7",
+                                    "type": "",
+                                    "value": "0x1c"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "6774:4:7",
+                                    "type": "",
+                                    "value": "0x04"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "revert",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "6761:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "6761:18:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "6761:18:7"
+                            }
+                          ]
+                        },
+                        "condition": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "6657:2:7",
+                                  "type": "",
+                                  "value": "96"
+                                },
+                                {
+                                  "name": "newOwner",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "6661:8:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "shl",
+                                "nodeType": "YulIdentifier",
+                                "src": "6653:3:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "6653:17:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "iszero",
+                            "nodeType": "YulIdentifier",
+                            "src": "6646:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "6646:25:7"
+                        },
+                        "nodeType": "YulIf",
+                        "src": "6643:150:7"
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3155,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "6661:8:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3160,
+                  "nodeType": "InlineAssembly",
+                  "src": "6620:183:7"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3162,
+                        "name": "newOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3155,
+                        "src": "6822:8:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 3161,
+                      "name": "_setOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3135,
+                      "src": "6812:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 3163,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "6812:19:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3164,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6812:19:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3153,
+              "nodeType": "StructuredDocumentation",
+              "src": "6418:66:7",
+              "text": "@dev Allows the owner to transfer the ownership to `newOwner`."
+            },
+            "functionSelector": "f2fde38b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3158,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 3157,
+                  "name": "onlyOwner",
+                  "nameLocations": [
+                    "6557:9:7"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3241,
+                  "src": "6557:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "6557:9:7"
+              }
+            ],
+            "name": "transferOwnership",
+            "nameLocation": "6498:17:7",
+            "parameters": {
+              "id": 3156,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3155,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "6524:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3166,
+                  "src": "6516:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3154,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6516:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6515:18:7"
+            },
+            "returnParameters": {
+              "id": 3159,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "6567:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3180,
+            "nodeType": "FunctionDefinition",
+            "src": "6903:100:7",
+            "nodes": [],
+            "body": {
+              "id": 3179,
+              "nodeType": "Block",
+              "src": "6965:38:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "hexValue": "30",
+                            "id": 3175,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "6993:1:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_rational_0_by_1",
+                              "typeString": "int_const 0"
+                            }
+                          ],
+                          "id": 3174,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "6985:7:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 3173,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "6985:7:7",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 3176,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "6985:10:7",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 3172,
+                      "name": "_setOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3135,
+                      "src": "6975:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 3177,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "6975:21:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3178,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6975:21:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3167,
+              "nodeType": "StructuredDocumentation",
+              "src": "6844:54:7",
+              "text": "@dev Allows the owner to renounce their ownership."
+            },
+            "functionSelector": "715018a6",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3170,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 3169,
+                  "name": "onlyOwner",
+                  "nameLocations": [
+                    "6955:9:7"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3241,
+                  "src": "6955:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "6955:9:7"
+              }
+            ],
+            "name": "renounceOwnership",
+            "nameLocation": "6912:17:7",
+            "parameters": {
+              "id": 3168,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "6929:2:7"
+            },
+            "returnParameters": {
+              "id": 3171,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "6965:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3195,
+            "nodeType": "FunctionDefinition",
+            "src": "7162:617:7",
+            "nodes": [],
+            "body": {
+              "id": 3194,
+              "nodeType": "Block",
+              "src": "7221:558:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "id": 3193,
+                  "nodeType": "UncheckedBlock",
+                  "src": "7231:542:7",
+                  "statements": [
+                    {
+                      "assignments": [
+                        3185
+                      ],
+                      "declarations": [
+                        {
+                          "constant": false,
+                          "id": 3185,
+                          "mutability": "mutable",
+                          "name": "expires",
+                          "nameLocation": "7263:7:7",
+                          "nodeType": "VariableDeclaration",
+                          "scope": 3193,
+                          "src": "7255:15:7",
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "typeName": {
+                            "id": 3184,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "7255:7:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "visibility": "internal"
+                        }
+                      ],
+                      "id": 3191,
+                      "initialValue": {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 3190,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 3186,
+                            "name": "block",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -4,
+                            "src": "7273:5:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_block",
+                              "typeString": "block"
+                            }
+                          },
+                          "id": 3187,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "7279:9:7",
+                          "memberName": "timestamp",
+                          "nodeType": "MemberAccess",
+                          "src": "7273:15:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "+",
+                        "rightExpression": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 3188,
+                            "name": "_ownershipHandoverValidFor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3152,
+                            "src": "7291:26:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                              "typeString": "function () view returns (uint64)"
+                            }
+                          },
+                          "id": 3189,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "7291:28:7",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                          }
+                        },
+                        "src": "7273:46:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "VariableDeclarationStatement",
+                      "src": "7255:64:7"
+                    },
+                    {
+                      "AST": {
+                        "nodeType": "YulBlock",
+                        "src": "7389:374:7",
+                        "statements": [
+                          {
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "7481:4:7",
+                                  "type": "",
+                                  "value": "0x0c"
+                                },
+                                {
+                                  "name": "_HANDOVER_SLOT_SEED",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "7487:19:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mstore",
+                                "nodeType": "YulIdentifier",
+                                "src": "7474:6:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "7474:33:7"
+                            },
+                            "nodeType": "YulExpressionStatement",
+                            "src": "7474:33:7"
+                          },
+                          {
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "7531:4:7",
+                                  "type": "",
+                                  "value": "0x00"
+                                },
+                                {
+                                  "arguments": [],
+                                  "functionName": {
+                                    "name": "caller",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "7537:6:7"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "7537:8:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mstore",
+                                "nodeType": "YulIdentifier",
+                                "src": "7524:6:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "7524:22:7"
+                            },
+                            "nodeType": "YulExpressionStatement",
+                            "src": "7524:22:7"
+                          },
+                          {
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "arguments": [
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "7580:4:7",
+                                      "type": "",
+                                      "value": "0x0c"
+                                    },
+                                    {
+                                      "kind": "number",
+                                      "nodeType": "YulLiteral",
+                                      "src": "7586:4:7",
+                                      "type": "",
+                                      "value": "0x20"
+                                    }
+                                  ],
+                                  "functionName": {
+                                    "name": "keccak256",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "7570:9:7"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "7570:21:7"
+                                },
+                                {
+                                  "name": "expires",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "7593:7:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "sstore",
+                                "nodeType": "YulIdentifier",
+                                "src": "7563:6:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "7563:38:7"
+                            },
+                            "nodeType": "YulExpressionStatement",
+                            "src": "7563:38:7"
+                          },
+                          {
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "7687:1:7",
+                                  "type": "",
+                                  "value": "0"
+                                },
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "7690:1:7",
+                                  "type": "",
+                                  "value": "0"
+                                },
+                                {
+                                  "name": "_OWNERSHIP_HANDOVER_REQUESTED_EVENT_SIGNATURE",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "7693:45:7"
+                                },
+                                {
+                                  "arguments": [],
+                                  "functionName": {
+                                    "name": "caller",
+                                    "nodeType": "YulIdentifier",
+                                    "src": "7740:6:7"
+                                  },
+                                  "nodeType": "YulFunctionCall",
+                                  "src": "7740:8:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "log2",
+                                "nodeType": "YulIdentifier",
+                                "src": "7682:4:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "7682:67:7"
+                            },
+                            "nodeType": "YulExpressionStatement",
+                            "src": "7682:67:7"
+                          }
+                        ]
+                      },
+                      "documentation": "@solidity memory-safe-assembly",
+                      "evmVersion": "paris",
+                      "externalReferences": [
+                        {
+                          "declaration": 3119,
+                          "isOffset": false,
+                          "isSlot": false,
+                          "src": "7487:19:7",
+                          "valueSize": 1
+                        },
+                        {
+                          "declaration": 3107,
+                          "isOffset": false,
+                          "isSlot": false,
+                          "src": "7693:45:7",
+                          "valueSize": 1
+                        },
+                        {
+                          "declaration": 3185,
+                          "isOffset": false,
+                          "isSlot": false,
+                          "src": "7593:7:7",
+                          "valueSize": 1
+                        }
+                      ],
+                      "id": 3192,
+                      "nodeType": "InlineAssembly",
+                      "src": "7380:383:7"
+                    }
+                  ]
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3181,
+              "nodeType": "StructuredDocumentation",
+              "src": "7009:148:7",
+              "text": "@dev Request a two-step ownership handover to the caller.\n The request will automatically expire in 48 hours (172800 seconds) by default."
+            },
+            "functionSelector": "25692962",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requestOwnershipHandover",
+            "nameLocation": "7171:24:7",
+            "parameters": {
+              "id": 3182,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7195:2:7"
+            },
+            "returnParameters": {
+              "id": 3183,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7221:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3201,
+            "nodeType": "FunctionDefinition",
+            "src": "7861:456:7",
+            "nodes": [],
+            "body": {
+              "id": 3200,
+              "nodeType": "Block",
+              "src": "7919:398:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "7981:330:7",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8057:4:7",
+                              "type": "",
+                              "value": "0x0c"
+                            },
+                            {
+                              "name": "_HANDOVER_SLOT_SEED",
+                              "nodeType": "YulIdentifier",
+                              "src": "8063:19:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "8050:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8050:33:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "8050:33:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8103:4:7",
+                              "type": "",
+                              "value": "0x00"
+                            },
+                            {
+                              "arguments": [],
+                              "functionName": {
+                                "name": "caller",
+                                "nodeType": "YulIdentifier",
+                                "src": "8109:6:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "8109:8:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "8096:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8096:22:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "8096:22:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "8148:4:7",
+                                  "type": "",
+                                  "value": "0x0c"
+                                },
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "8154:4:7",
+                                  "type": "",
+                                  "value": "0x20"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "keccak256",
+                                "nodeType": "YulIdentifier",
+                                "src": "8138:9:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "8138:21:7"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8161:1:7",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "sstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "8131:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8131:32:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "8131:32:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8240:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8243:1:7",
+                              "type": "",
+                              "value": "0"
+                            },
+                            {
+                              "name": "_OWNERSHIP_HANDOVER_CANCELED_EVENT_SIGNATURE",
+                              "nodeType": "YulIdentifier",
+                              "src": "8246:44:7"
+                            },
+                            {
+                              "arguments": [],
+                              "functionName": {
+                                "name": "caller",
+                                "nodeType": "YulIdentifier",
+                                "src": "8292:6:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "8292:8:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "log2",
+                            "nodeType": "YulIdentifier",
+                            "src": "8235:4:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8235:66:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "8235:66:7"
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3119,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "8063:19:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3111,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "8246:44:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3199,
+                  "nodeType": "InlineAssembly",
+                  "src": "7972:339:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3196,
+              "nodeType": "StructuredDocumentation",
+              "src": "7785:71:7",
+              "text": "@dev Cancels the two-step ownership handover to the caller, if any."
+            },
+            "functionSelector": "54d1f13d",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "cancelOwnershipHandover",
+            "nameLocation": "7870:23:7",
+            "parameters": {
+              "id": 3197,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7893:2:7"
+            },
+            "returnParameters": {
+              "id": 3198,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7919:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3215,
+            "nodeType": "FunctionDefinition",
+            "src": "8504:708:7",
+            "nodes": [],
+            "body": {
+              "id": 3214,
+              "nodeType": "Block",
+              "src": "8594:618:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "8656:517:7",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8732:4:7",
+                              "type": "",
+                              "value": "0x0c"
+                            },
+                            {
+                              "name": "_HANDOVER_SLOT_SEED",
+                              "nodeType": "YulIdentifier",
+                              "src": "8738:19:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "8725:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8725:33:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "8725:33:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8778:4:7",
+                              "type": "",
+                              "value": "0x00"
+                            },
+                            {
+                              "name": "pendingOwner",
+                              "nodeType": "YulIdentifier",
+                              "src": "8784:12:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "8771:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8771:26:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "8771:26:7"
+                      },
+                      {
+                        "nodeType": "YulVariableDeclaration",
+                        "src": "8810:41:7",
+                        "value": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8840:4:7",
+                              "type": "",
+                              "value": "0x0c"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "8846:4:7",
+                              "type": "",
+                              "value": "0x20"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "keccak256",
+                            "nodeType": "YulIdentifier",
+                            "src": "8830:9:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8830:21:7"
+                        },
+                        "variables": [
+                          {
+                            "name": "handoverSlot",
+                            "nodeType": "YulTypedName",
+                            "src": "8814:12:7",
+                            "type": ""
+                          }
+                        ]
+                      },
+                      {
+                        "body": {
+                          "nodeType": "YulBlock",
+                          "src": "8967:117:7",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "8992:4:7",
+                                    "type": "",
+                                    "value": "0x00"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "8998:10:7",
+                                    "type": "",
+                                    "value": "0x6f5e8818"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "8985:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "8985:24:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "8985:24:7"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "9059:4:7",
+                                    "type": "",
+                                    "value": "0x1c"
+                                  },
+                                  {
+                                    "kind": "number",
+                                    "nodeType": "YulLiteral",
+                                    "src": "9065:4:7",
+                                    "type": "",
+                                    "value": "0x04"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "revert",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "9052:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "9052:18:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "9052:18:7"
+                            }
+                          ]
+                        },
+                        "condition": {
+                          "arguments": [
+                            {
+                              "arguments": [],
+                              "functionName": {
+                                "name": "timestamp",
+                                "nodeType": "YulIdentifier",
+                                "src": "8933:9:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "8933:11:7"
+                            },
+                            {
+                              "arguments": [
+                                {
+                                  "name": "handoverSlot",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "8952:12:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "sload",
+                                "nodeType": "YulIdentifier",
+                                "src": "8946:5:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "8946:19:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "gt",
+                            "nodeType": "YulIdentifier",
+                            "src": "8930:2:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "8930:36:7"
+                        },
+                        "nodeType": "YulIf",
+                        "src": "8927:157:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "name": "handoverSlot",
+                              "nodeType": "YulIdentifier",
+                              "src": "9147:12:7"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "9161:1:7",
+                              "type": "",
+                              "value": "0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "sstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "9140:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "9140:23:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "9140:23:7"
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3119,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "8738:19:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3204,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "8784:12:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3209,
+                  "nodeType": "InlineAssembly",
+                  "src": "8647:526:7"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3211,
+                        "name": "pendingOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3204,
+                        "src": "9192:12:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 3210,
+                      "name": "_setOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3135,
+                      "src": "9182:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 3212,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "9182:23:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3213,
+                  "nodeType": "ExpressionStatement",
+                  "src": "9182:23:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3202,
+              "nodeType": "StructuredDocumentation",
+              "src": "8323:176:7",
+              "text": "@dev Allows the owner to complete the two-step ownership handover to `pendingOwner`.\n Reverts if there is no existing ownership handover requested by `pendingOwner`."
+            },
+            "functionSelector": "f04e283e",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3207,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 3206,
+                  "name": "onlyOwner",
+                  "nameLocations": [
+                    "8584:9:7"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3241,
+                  "src": "8584:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "8584:9:7"
+              }
+            ],
+            "name": "completeOwnershipHandover",
+            "nameLocation": "8513:25:7",
+            "parameters": {
+              "id": 3205,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3204,
+                  "mutability": "mutable",
+                  "name": "pendingOwner",
+                  "nameLocation": "8547:12:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3215,
+                  "src": "8539:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3203,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8539:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8538:22:7"
+            },
+            "returnParameters": {
+              "id": 3208,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8594:0:7"
+            },
+            "scope": 3242,
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3223,
+            "nodeType": "FunctionDefinition",
+            "src": "9549:191:7",
+            "nodes": [],
+            "body": {
+              "id": 3222,
+              "nodeType": "Block",
+              "src": "9611:129:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "9673:61:7",
+                    "statements": [
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "9687:37:7",
+                        "value": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "name": "_OWNER_SLOT_NOT",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "9707:15:7"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "not",
+                                "nodeType": "YulIdentifier",
+                                "src": "9703:3:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "9703:20:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "sload",
+                            "nodeType": "YulIdentifier",
+                            "src": "9697:5:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "9697:27:7"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "result",
+                            "nodeType": "YulIdentifier",
+                            "src": "9687:6:7"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3115,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "9707:15:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3219,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "9687:6:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3221,
+                  "nodeType": "InlineAssembly",
+                  "src": "9664:70:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3216,
+              "nodeType": "StructuredDocumentation",
+              "src": "9501:43:7",
+              "text": "@dev Returns the owner of the contract."
+            },
+            "functionSelector": "8da5cb5b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "9558:5:7",
+            "parameters": {
+              "id": 3217,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "9563:2:7"
+            },
+            "returnParameters": {
+              "id": 3220,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3219,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nameLocation": "9603:6:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3223,
+                  "src": "9595:14:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3218,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9595:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "9594:16:7"
+            },
+            "scope": 3242,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3233,
+            "nodeType": "FunctionDefinition",
+            "src": "9843:435:7",
+            "nodes": [],
+            "body": {
+              "id": 3232,
+              "nodeType": "Block",
+              "src": "9982:296:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "10044:228:7",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "10107:4:7",
+                              "type": "",
+                              "value": "0x0c"
+                            },
+                            {
+                              "name": "_HANDOVER_SLOT_SEED",
+                              "nodeType": "YulIdentifier",
+                              "src": "10113:19:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "10100:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "10100:33:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "10100:33:7"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "10153:4:7",
+                              "type": "",
+                              "value": "0x00"
+                            },
+                            {
+                              "name": "pendingOwner",
+                              "nodeType": "YulIdentifier",
+                              "src": "10159:12:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "10146:6:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "10146:26:7"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "10146:26:7"
+                      },
+                      {
+                        "nodeType": "YulAssignment",
+                        "src": "10224:38:7",
+                        "value": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "10250:4:7",
+                                  "type": "",
+                                  "value": "0x0c"
+                                },
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "10256:4:7",
+                                  "type": "",
+                                  "value": "0x20"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "keccak256",
+                                "nodeType": "YulIdentifier",
+                                "src": "10240:9:7"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "10240:21:7"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "sload",
+                            "nodeType": "YulIdentifier",
+                            "src": "10234:5:7"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "10234:28:7"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "result",
+                            "nodeType": "YulIdentifier",
+                            "src": "10224:6:7"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "documentation": "@solidity memory-safe-assembly",
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 3119,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "10113:19:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3226,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "10159:12:7",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 3229,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "10224:6:7",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 3231,
+                  "nodeType": "InlineAssembly",
+                  "src": "10035:237:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3224,
+              "nodeType": "StructuredDocumentation",
+              "src": "9746:92:7",
+              "text": "@dev Returns the expiry timestamp for the two-step ownership handover to `pendingOwner`."
+            },
+            "functionSelector": "fee81cf4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ownershipHandoverExpiresAt",
+            "nameLocation": "9852:26:7",
+            "parameters": {
+              "id": 3227,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3226,
+                  "mutability": "mutable",
+                  "name": "pendingOwner",
+                  "nameLocation": "9887:12:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3233,
+                  "src": "9879:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3225,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9879:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "9878:22:7"
+            },
+            "returnParameters": {
+              "id": 3230,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3229,
+                  "mutability": "mutable",
+                  "name": "result",
+                  "nameLocation": "9970:6:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3233,
+                  "src": "9962:14:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3228,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "9962:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "9961:16:7"
+            },
+            "scope": 3242,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "id": 3241,
+            "nodeType": "ModifierDefinition",
+            "src": "10628:70:7",
+            "nodes": [],
+            "body": {
+              "id": 3240,
+              "nodeType": "Block",
+              "src": "10657:41:7",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3236,
+                      "name": "_checkOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3141,
+                      "src": "10667:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 3237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "10667:13:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3238,
+                  "nodeType": "ExpressionStatement",
+                  "src": "10667:13:7"
+                },
+                {
+                  "id": 3239,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "10690:1:7"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 3234,
+              "nodeType": "StructuredDocumentation",
+              "src": "10567:56:7",
+              "text": "@dev Marks a function as only callable by the owner."
+            },
+            "name": "onlyOwner",
+            "nameLocation": "10637:9:7",
+            "parameters": {
+              "id": 3235,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "10646:2:7"
+            },
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "Ownable",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 3073,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:345:7",
+          "text": "@notice Simple single owner authorization mixin.\n @author Solady (https://github.com/vectorized/solady/blob/main/src/auth/Ownable.sol)\n @dev While the ownable portion follows\n [EIP-173](https://eips.ethereum.org/EIPS/eip-173) for compatibility,\n the nomenclature for the 2-step ownership handover may be unique to this codebase."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          3242
+        ],
+        "name": "Ownable",
+        "nameLocation": "420:7:7",
+        "scope": 3243,
+        "usedErrors": [
+          3076,
+          3079,
+          3082
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 7
+}

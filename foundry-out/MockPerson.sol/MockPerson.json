@@ -1,0 +1,111 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122065f1ae1ea1293a2c4a8f7902823d579e77aae82d1bcf9e2a3838edd97398ce9564736f6c63430008130033",
+    "sourceMap": "66:24:2:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea264697066735822122065f1ae1ea1293a2c4a8f7902823d579e77aae82d1bcf9e2a3838edd97398ce9564736f6c63430008130033",
+    "sourceMap": "66:24:2:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Week1/MockPerson.sol\":\"MockPerson\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":800},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=node_modules/forge-std/\",\":hardhat/=node_modules/hardhat/\",\":solady/=lib/solady/\"]},\"sources\":{\"contracts/Week1/MockPerson.sol\":{\"keccak256\":\"0xfc3f710a4d5d4b94b2ec3ff7d28b7b987be1ea01759c180a68ecdfc354d9b6e4\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://07ba10ba1f99e37e223c1f6e9451b95c65cc99ab3266f4e363a05f4c5b5ba845\",\"dweb:/ipfs/QmSyhZfpW1Dpv6dCmwzapAeG8dy3xcsKrvRsEoXuyT2To2\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=node_modules/forge-std/",
+        "hardhat/=node_modules/hardhat/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 800
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/Week1/MockPerson.sol": "MockPerson"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/Week1/MockPerson.sol": {
+        "keccak256": "0xfc3f710a4d5d4b94b2ec3ff7d28b7b987be1ea01759c180a68ecdfc354d9b6e4",
+        "urls": [
+          "bzz-raw://07ba10ba1f99e37e223c1f6e9451b95c65cc99ab3266f4e363a05f4c5b5ba845",
+          "dweb:/ipfs/QmSyhZfpW1Dpv6dCmwzapAeG8dy3xcsKrvRsEoXuyT2To2"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/Week1/MockPerson.sol",
+    "id": 143,
+    "exportedSymbols": {
+      "MockPerson": [
+        142
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:51:2",
+    "nodes": [
+      {
+        "id": 141,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:2",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 142,
+        "nodeType": "ContractDefinition",
+        "src": "66:24:2",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "MockPerson",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          142
+        ],
+        "name": "MockPerson",
+        "nameLocation": "75:10:2",
+        "scope": 143,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 2
+}

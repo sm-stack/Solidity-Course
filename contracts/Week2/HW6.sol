@@ -10,3 +10,10 @@ contract ReturnETH {
         }
     }   
 }
+
+/*
+0x 60 1e 80 60 09 3d 39 3d f3
+-> PUSH1 0x1e(30 in uint) DUP1 PUSH1 0x09 RETURNDATASIZE CODECOPY 0x3d 0xf3  
+
+
+*/

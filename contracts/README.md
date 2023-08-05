@@ -51,4 +51,10 @@ HW/TIL in Expert Solidity Bootcamp of Encode Club
 
 
 ## Week 2
-1. 
+1. [TestYul.sol](.//Week2/TestYul.sol)
+- Includes 5 Contracts, the first one from [this gist](https://gist.github.com/extropyCoder/4243c0f90e6a6e97006a31f5b9265b94), and else from [Extropy github](https://github.com/ExtropyIO/ExpertSolidityBootcamp/tree/main/exercises/assembly). 
+- Key Takeaways
+    - A function including constructor can be optimised by setting it `payable`, unless `payable` do not make any vulnerabilities in the contract.
+    - `extcodesize` can be used as a contract checker, but has a significant vulnerability. It can be bypassed when it's called inside the constructor of external contract. 
+    - `mload(0x40)` is a good method to keep track of free memory.
+    

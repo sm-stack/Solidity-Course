@@ -343,6 +343,90 @@
         "Store"
       ]
     },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week2/HW6.sol": {
+      "lastModificationDate": 1691221511778,
+      "contentHash": "15f621ad282b2564dce2dfc3eba94006",
+      "sourceName": "contracts/Week2/HW6.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "ReturnETH"
+      ]
+    },
+    "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week2/HW7.sol": {
+      "lastModificationDate": 1691297010986,
+      "contentHash": "9dea4cec35f4e351d1b504db7621d3fb",
+      "sourceName": "contracts/Week2/HW7.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "solady/=lib/solady/",
+            "lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/",
+            "lib/solady:ds-test/=lib/solady/lib/ds-test/src/",
+            "lib/solady:forge-std/=lib/solady/test/utils/forge-std/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "Transfer"
+      ]
+    },
     "/home/sm-stack/sm-stack/Solidity-Course/contracts/Week2/TestYul.sol": {
       "lastModificationDate": 1690884943374,
       "contentHash": "65122b08f14dd23dd1b022b158880dd9",

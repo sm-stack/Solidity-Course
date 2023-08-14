@@ -4,12 +4,12 @@ HW/TIL in Expert Solidity Bootcamp of Encode Club
 ---
 
 ## Week 1
-1. [ArrayDelete.sol](./Week1/ArrayDelete.sol)
+1. [ArrayDelete.sol](./ArrayDelete.sol)
 
 - Function `deleteIndexMemory` acts like `list.pop(index)` at Python, but instead of the deleted element it returns the array leftover after deletion of the element.
 - It's a view function, and costs 27911 gas according to the gas simulation at ethers.js.
 
-2. [StringCompare.sol](./Week1/CompareString.sol)
+2. [StringCompare.sol](./CompareString.sol)
 
 - Function `isEqual` is to compare two strings if they are equal to each other, inspired by this [Medium article](https://earlz.medium.com/the-faults-and-shortcomings-of-the-evm-bde4d09b8b6a).
 - It's a variation of Openzeppelin [String.sol library](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/7222a31d548695998a475c9661fa159ef45a0e88/contracts/utils/Strings.sol#L90), but added some memory variables to inspect memory with foundry, which requires more gas.

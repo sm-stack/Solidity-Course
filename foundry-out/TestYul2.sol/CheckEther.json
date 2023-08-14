@@ -1,0 +1,306 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "checkEther",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50607d8061001e6000396000f3fe608060405260043610601c5760003560e01c80634dac873b146021575b600080fd5b60276039565b60405190815260200160405180910390f35b600034604051526020604051f3fea26469706673582212207b44eef527dd6ebd6794aeaccf4624be96aed9882ce097b723a99482a29faf1164736f6c63430008130033",
+    "sourceMap": "58:204:2:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405260043610601c5760003560e01c80634dac873b146021575b600080fd5b60276039565b60405190815260200160405180910390f35b600034604051526020604051f3fea26469706673582212207b44eef527dd6ebd6794aeaccf4624be96aed9882ce097b723a99482a29faf1164736f6c63430008130033",
+    "sourceMap": "58:204:2:-:0;;;;;;;;;;;;;;;;;;;;;84:176;;;:::i;:::-;;;160:25:9;;;148:2;133:18;84:176:2;;;;;;;;132:7;194:11;187:4;181:11;174:32;239:4;187;226:11;219:25",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "checkEther()": "4dac873b"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"checkEther\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Week2/TestYul2.sol\":\"CheckEther\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":800},\"remappings\":[\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=node_modules/forge-std/\",\":hardhat/=node_modules/hardhat/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"contracts/Week2/TestYul2.sol\":{\"keccak256\":\"0xbe99a2f8ba6545b9fb49410def5b9d465b84dabb315d5a4013c8bb8f4c5fad80\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8474ea384e2a6bfe4372efff81acaea691ee55974e67d1b3fb23a9d393bc54f3\",\"dweb:/ipfs/QmdYAvRbZpD5JuAuSpHdJy5Vr7DGiuktajFgrpfSsFs7Qc\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "checkEther",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=node_modules/forge-std/",
+        "hardhat/=node_modules/hardhat/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 800
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/Week2/TestYul2.sol": "CheckEther"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/Week2/TestYul2.sol": {
+        "keccak256": "0xbe99a2f8ba6545b9fb49410def5b9d465b84dabb315d5a4013c8bb8f4c5fad80",
+        "urls": [
+          "bzz-raw://8474ea384e2a6bfe4372efff81acaea691ee55974e67d1b3fb23a9d393bc54f3",
+          "dweb:/ipfs/QmdYAvRbZpD5JuAuSpHdJy5Vr7DGiuktajFgrpfSsFs7Qc"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/Week2/TestYul2.sol",
+    "id": 143,
+    "exportedSymbols": {
+      "CheckEther": [
+        142
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:230:2",
+    "nodes": [
+      {
+        "id": 134,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:2",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 142,
+        "nodeType": "ContractDefinition",
+        "src": "58:204:2",
+        "nodes": [
+          {
+            "id": 141,
+            "nodeType": "FunctionDefinition",
+            "src": "84:176:2",
+            "nodes": [],
+            "body": {
+              "id": 140,
+              "nodeType": "Block",
+              "src": "141:119:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "160:94:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "187:4:2",
+                                  "type": "",
+                                  "value": "0x40"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mload",
+                                "nodeType": "YulIdentifier",
+                                "src": "181:5:2"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "181:11:2"
+                            },
+                            {
+                              "arguments": [],
+                              "functionName": {
+                                "name": "callvalue",
+                                "nodeType": "YulIdentifier",
+                                "src": "194:9:2"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "194:11:2"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "174:6:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "174:32:2"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "174:32:2"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "232:4:2",
+                                  "type": "",
+                                  "value": "0x40"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mload",
+                                "nodeType": "YulIdentifier",
+                                "src": "226:5:2"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "226:11:2"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "239:4:2",
+                              "type": "",
+                              "value": "0x20"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "return",
+                            "nodeType": "YulIdentifier",
+                            "src": "219:6:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "219:25:2"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "219:25:2"
+                      }
+                    ]
+                  },
+                  "evmVersion": "paris",
+                  "externalReferences": [],
+                  "id": 139,
+                  "nodeType": "InlineAssembly",
+                  "src": "151:103:2"
+                }
+              ]
+            },
+            "functionSelector": "4dac873b",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkEther",
+            "nameLocation": "93:10:2",
+            "parameters": {
+              "id": 135,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "103:2:2"
+            },
+            "returnParameters": {
+              "id": 138,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 137,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 141,
+                  "src": "132:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 136,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "131:9:2"
+            },
+            "scope": 142,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "CheckEther",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          142
+        ],
+        "name": "CheckEther",
+        "nameLocation": "67:10:2",
+        "scope": 143,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 2
+}

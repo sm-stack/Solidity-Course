@@ -1,0 +1,306 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "callValue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50607d8061001e6000396000f3fe608060405260043610601c5760003560e01c8063d62457f6146021575b600080fd5b60276039565b60405190815260200160405180910390f35b600034604051526020604051f3fea26469706673582212202b32505864bee8c131f82c0349ef09de61ed2e2ea699d2ca27f0b4f86b9408f564736f6c63430008130033",
+    "sourceMap": "58:210:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405260043610601c5760003560e01c8063d62457f6146021575b600080fd5b60276039565b60405190815260200160405180910390f35b600034604051526020604051f3fea26469706673582212202b32505864bee8c131f82c0349ef09de61ed2e2ea699d2ca27f0b4f86b9408f564736f6c63430008130033",
+    "sourceMap": "58:210:0:-:0;;;;;;;;;;;;;;;;;;;;;88:175;;;:::i;:::-;;;160:25:9;;;148:2;133:18;88:175:0;;;;;;;;135:7;197:11;190:4;184:11;177:32;242:4;190;229:11;222:25",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "callValue()": "d62457f6"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"callValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Week2/HW6.sol\":\"ReturnETH\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":800},\"remappings\":[\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=node_modules/forge-std/\",\":hardhat/=node_modules/hardhat/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"contracts/Week2/HW6.sol\":{\"keccak256\":\"0x92443343462cab54fe0faccb994247fda9727bdd7372afb997d3c2b2700ff6d6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://37c32bfe18ff0ccf5a0fe7e893c5858fa731e433623bd3cb313953f49594e967\",\"dweb:/ipfs/QmVrY4xSbrAV4mXQMmPZ448rZNx2kzPW5RiE6umWM5ECgY\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "callValue",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/=lib/openzeppelin-contracts/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        "forge-std/=node_modules/forge-std/",
+        "hardhat/=node_modules/hardhat/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "solady/=lib/solady/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 800
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "contracts/Week2/HW6.sol": "ReturnETH"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/Week2/HW6.sol": {
+        "keccak256": "0x92443343462cab54fe0faccb994247fda9727bdd7372afb997d3c2b2700ff6d6",
+        "urls": [
+          "bzz-raw://37c32bfe18ff0ccf5a0fe7e893c5858fa731e433623bd3cb313953f49594e967",
+          "dweb:/ipfs/QmVrY4xSbrAV4mXQMmPZ448rZNx2kzPW5RiE6umWM5ECgY"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/Week2/HW6.sol",
+    "id": 10,
+    "exportedSymbols": {
+      "ReturnETH": [
+        9
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:354:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 9,
+        "nodeType": "ContractDefinition",
+        "src": "58:210:0",
+        "nodes": [
+          {
+            "id": 8,
+            "nodeType": "FunctionDefinition",
+            "src": "88:175:0",
+            "nodes": [],
+            "body": {
+              "id": 7,
+              "nodeType": "Block",
+              "src": "144:119:0",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "163:94:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "190:4:0",
+                                  "type": "",
+                                  "value": "0x40"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mload",
+                                "nodeType": "YulIdentifier",
+                                "src": "184:5:0"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "184:11:0"
+                            },
+                            {
+                              "arguments": [],
+                              "functionName": {
+                                "name": "callvalue",
+                                "nodeType": "YulIdentifier",
+                                "src": "197:9:0"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "197:11:0"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "177:6:0"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "177:32:0"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "177:32:0"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "kind": "number",
+                                  "nodeType": "YulLiteral",
+                                  "src": "235:4:0",
+                                  "type": "",
+                                  "value": "0x40"
+                                }
+                              ],
+                              "functionName": {
+                                "name": "mload",
+                                "nodeType": "YulIdentifier",
+                                "src": "229:5:0"
+                              },
+                              "nodeType": "YulFunctionCall",
+                              "src": "229:11:0"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "242:4:0",
+                              "type": "",
+                              "value": "0x20"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "return",
+                            "nodeType": "YulIdentifier",
+                            "src": "222:6:0"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "222:25:0"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "222:25:0"
+                      }
+                    ]
+                  },
+                  "evmVersion": "paris",
+                  "externalReferences": [],
+                  "id": 6,
+                  "nodeType": "InlineAssembly",
+                  "src": "154:103:0"
+                }
+              ]
+            },
+            "functionSelector": "d62457f6",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "callValue",
+            "nameLocation": "97:9:0",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "106:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "135:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:9:0"
+            },
+            "scope": 9,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ReturnETH",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          9
+        ],
+        "name": "ReturnETH",
+        "nameLocation": "67:9:0",
+        "scope": 10,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 0
+}

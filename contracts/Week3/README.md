@@ -15,3 +15,7 @@
     - Delete `addPlayer` function. It does nothing in the contract.
     - Cache winners.length in memory at `payWinners` function.
     
+3. [BitShift.sol](./BitShift.sol)
+- Shifting given storage variables with both Solidity and Yul. Unchecked block is applied to both functions, to avoid overflow revert when the parameter `beFlag` is true.
+- `shift_sol` function consumes 5357 gas in average, while `shift_yul` consumes 5417 gas. You can check it through `forge test --gas-report` on the base directory.
+- Yul is **NOT** always efficient in gas optimisation; sometimes, it is more expensive than just using Solidity. 

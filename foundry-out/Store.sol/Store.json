@@ -40,13 +40,13 @@
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b5060f88061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80633fb5c1cb1460415780638381f58a146053578063d09de08a14606d575b600080fd5b6051604c3660046084565b600355565b005b605b60035481565b60405190815260200160405180910390f35b605160038054906000607d83609c565b9190505550565b600060208284031215609557600080fd5b5035919050565b60006001820160bb57634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212201edabddd02abf31e86617d35fda599c918c6780e7b10cbae3b4b58bffd7933bc64736f6c63430008130033",
+    "object": "0x608060405234801561001057600080fd5b5060f88061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80633fb5c1cb1460415780638381f58a146053578063d09de08a14606d575b600080fd5b6051604c3660046084565b600355565b005b605b60035481565b60405190815260200160405180910390f35b605160038054906000607d83609c565b9190505550565b600060208284031215609557600080fd5b5035919050565b60006001820160bb57634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212203bd4a6d753d94ebc126fd53de2ca218f1e01d955306015370414e7120ec8e50c64736f6c63430008130033",
     "sourceMap": "65:887:5:-:0;;;783:21;;;;;;;;;;65:887;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80633fb5c1cb1460415780638381f58a146053578063d09de08a14606d575b600080fd5b6051604c3660046084565b600355565b005b605b60035481565b60405190815260200160405180910390f35b605160038054906000607d83609c565b9190505550565b600060208284031215609557600080fd5b5035919050565b60006001820160bb57634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212201edabddd02abf31e86617d35fda599c918c6780e7b10cbae3b4b58bffd7933bc64736f6c63430008130033",
-    "sourceMap": "65:887:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;811:80;;;;;;:::i;:::-;866:6;:18;811:80;;;725:21;;;;;;;;;345:25:15;;;333:2;318:18;725:21:5;;;;;;;897:53;;935:6;:8;;;:6;:8;;;:::i;:::-;;;;;;897:53::o;14:180:15:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:15;;14:180;-1:-1:-1;14:180:15:o;381:232::-;420:3;441:17;;;438:140;;500:10;495:3;491:20;488:1;481:31;535:4;532:1;525:15;563:4;560:1;553:15;438:140;-1:-1:-1;605:1:15;594:13;;381:232::o",
+    "object": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80633fb5c1cb1460415780638381f58a146053578063d09de08a14606d575b600080fd5b6051604c3660046084565b600355565b005b605b60035481565b60405190815260200160405180910390f35b605160038054906000607d83609c565b9190505550565b600060208284031215609557600080fd5b5035919050565b60006001820160bb57634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212203bd4a6d753d94ebc126fd53de2ca218f1e01d955306015370414e7120ec8e50c64736f6c63430008130033",
+    "sourceMap": "65:887:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;811:80;;;;;;:::i;:::-;866:6;:18;811:80;;;725:21;;;;;;;;;345:25:27;;;333:2;318:18;725:21:5;;;;;;;897:53;;935:6;:8;;;:6;:8;;;:::i;:::-;;;;;;897:53::o;14:180:27:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:27;;14:180;-1:-1:-1;14:180:27:o;381:232::-;420:3;441:17;;;438:140;;500:10;495:3;491:20;488:1;481:31;535:4;532:1;525:15;563:4;560:1;553:15;438:140;-1:-1:-1;605:1:27;594:13;;381:232::o",
     "linkReferences": {}
   },
   "methodIdentifiers": {
@@ -54,7 +54,7 @@
     "number()": "8381f58a",
     "setNumber(uint256)": "3fb5c1cb"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"increment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newNumber\",\"type\":\"uint256\"}],\"name\":\"setNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Week1/Store.sol\":\"Store\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":800},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=node_modules/forge-std/\",\":hardhat/=node_modules/hardhat/\",\":solady/=lib/solady/\"]},\"sources\":{\"contracts/Week1/Store.sol\":{\"keccak256\":\"0x193817918fe270e1cfb8b968dea5bd6323fc93574752274d628b4638814f12ae\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7bdbbc4d955cac52891d9cabaf79f14a58330e1bb4a0920bdf4c6c22c0c78366\",\"dweb:/ipfs/QmNbRTFMwRYMrNPsD4yuEPMtsuip5KiFiYwgobx9XnTSKg\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"increment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newNumber\",\"type\":\"uint256\"}],\"name\":\"setNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Week1/Store.sol\":\"Store\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":800},\"remappings\":[\":@openzeppelin/=lib/openzeppelin-contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":eth-gas-reporter/=node_modules/eth-gas-reporter/\",\":forge-std/=node_modules/forge-std/\",\":hardhat/=node_modules/hardhat/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":solady/=lib/solady/\"]},\"sources\":{\"contracts/Week1/Store.sol\":{\"keccak256\":\"0x193817918fe270e1cfb8b968dea5bd6323fc93574752274d628b4638814f12ae\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7bdbbc4d955cac52891d9cabaf79f14a58330e1bb4a0920bdf4c6c22c0c78366\",\"dweb:/ipfs/QmNbRTFMwRYMrNPsD4yuEPMtsuip5KiFiYwgobx9XnTSKg\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.19+commit.7dd6d404"
@@ -112,11 +112,15 @@
     },
     "settings": {
       "remappings": [
-        "ds-test/=lib/forge-std/lib/ds-test/src/",
-        "eth-gas-reporter/=node_modules/eth-gas-reporter/",
-        "forge-std/=node_modules/forge-std/",
-        "hardhat/=node_modules/hardhat/",
-        "solady/=lib/solady/"
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":eth-gas-reporter/=node_modules/eth-gas-reporter/",
+        ":forge-std/=node_modules/forge-std/",
+        ":hardhat/=node_modules/hardhat/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        ":solady/=lib/solady/"
       ],
       "optimizer": {
         "enabled": true,
